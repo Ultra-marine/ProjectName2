@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* background-color:rgb(0, 0, 0); */
+    background-color:black;
+    /* background-image: url("./img.jpg");
+    background-size: contain;
+    background-repeat: no-repeat; */
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+#per2{
+    transition:0.5s;
+}
+
+#ani1{
+    /* background-color:black; */
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 5vh;
+    z-index: 2;
+    /* opacity: 0.6; */
+}
+
+#aniBg{
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 12vw;
+    right: 12vw;
+
+    background-color:rgba(0, 0, 0, 0.678);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+
+
+#per{
+    filter:hue-rotate(30deg);
+}
+
+#per2{
+    /* filter:hue-rotate(-30deg); */
+}
+
+video{
+    height: 100vh;
+}
+#video1{
+    mix-blend-mode: hard-light;
+    position:absolute;
+    top: 0;
+}
+#video2{
+    mix-blend-mode:difference;
+    position:absolute;
+    top: 0;
+    left: 500px;
+    transition:1s;
+}
+
+#video2:hover{
+    left: 0;
+}
+
+#title{
+    font-size: 100pt;
+    position: absolute;
+    color:white;
+}
+
+.ele{
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    z-index: 11;
+    transform-origin: center;
+    width: 700px;
+    transition: .5s;
+}
+
+#ele1{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    /* mix-blend-mode: multiply; */
+    /* opacity: 0.8; */
+}
+
+#ele2{
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+#ele3{
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+
+    mix-blend-mode: difference;
+}
+
+#bg{
+    width: 100vw;
+    position: absolute;
+}
+
+#bgVideo{
+    filter: saturate(0);
+    top: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+#contentBox{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+}
+
+#mainContent{
+    height: 100vh;
+
+}
+
+#desc{
+    position: absolute;
+    top: 10vh;
+    bottom: 10vh;
+    left: 30vw;
+    right: 30vw;
+
+    background-color: rgba(0, 0, 0, 0.911);
+    z-index: 99;
+    color:white;
+    transition: .5s;
+    backdrop-filter: blur(2px);
+    padding: 10px;
+
+}
+
+#desc .text1 {
+  text-align: center;
+}
+
+#desc .text1 h1 {
+  padding-bottom: 10px;
+  font-size: 40pt;
+  color:red;
+}
+
+#desc .text1 p {
+  padding-top: 6vh;
+  font-size:30pt;
+}
+
+
+.no-display{
+    /* opacity: 0; */
+    transform: translateY(-88vh);
+}
+
+.no-display:hover{
+    background-color: red !important;
+    cursor: pointer;
+}
+
+
+#contentBox{
+    filter: saturate(0);
+}
